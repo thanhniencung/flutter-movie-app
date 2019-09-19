@@ -44,6 +44,7 @@ class DiscoverWidget extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(bottom: 10),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Image.network(
               'https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.posterPath}'),
@@ -52,6 +53,7 @@ class DiscoverWidget extends StatelessWidget {
               padding: EdgeInsets.all(15),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
                     movie.originalName,
